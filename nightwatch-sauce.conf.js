@@ -14,7 +14,7 @@ let nightwatch_config = {
       "launch_url": "http://localhost",
       "skip_testcases_on_fail": false,
       "selenium_host": "ondemand.eu-central-1.saucelabs.com",
-      "selenium_port": 4445,
+      "selenium_port": 443,
       "tunnelIdentifier": 'stitches',
       "build": process.env.CIRCLE_BUILD_NUM,
       "username": process.env.SAUCELABS_USER,
@@ -57,36 +57,36 @@ let nightwatch_config = {
         'browser': 'Edge'
       }
     },
-    iphone: {
-      desiredCapabilities: {
-        'device': 'iPhone 8',
-        'realMobile': 'true',
-        'os_version': '12.1',
-        'nativeWebTap': 'true'
-      }
-    },
-    galaxys9: {
-      desiredCapabilities: {
-        'device': 'Samsung Galaxy S9',
-        'realMobile': 'true',
-        'os_version': '8.0'
-      }
-    },
-    ucbrowser: {
-      desiredCapabilities: {
-        'device': 'Samsung Galaxy S9',
-        'realMobile': 'true',
-        'os_version': '8.0',
-        'browser': 'ucbrowser'
-      }
-    },
-    pixel: {
-      desiredCapabilities: {
-        'device': 'Google Pixel 3',
-        'realMobile': 'true',
-        'os_version': '9.0'
-      }
-    }
+//     iphone: {
+//       desiredCapabilities: {
+//         'device': 'iPhone 8',
+//         'realMobile': 'true',
+//         'os_version': '12.1',
+//         'nativeWebTap': 'true'
+//       }
+//     },
+//     galaxys9: {
+//       desiredCapabilities: {
+//         'device': 'Samsung Galaxy S9',
+//         'realMobile': 'true',
+//         'os_version': '8.0'
+//       }
+//     },
+//     ucbrowser: {
+//       desiredCapabilities: {
+//         'device': 'Samsung Galaxy S9',
+//         'realMobile': 'true',
+//         'os_version': '8.0',
+//         'browser': 'ucbrowser'
+//       }
+//     },
+//     pixel: {
+//       desiredCapabilities: {
+//         'device': 'Google Pixel 3',
+//         'realMobile': 'true',
+//         'os_version': '9.0'
+//       }
+//     }
   }
 };
 
